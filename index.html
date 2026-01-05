@@ -107,39 +107,55 @@
         </div>
         
         <div class="flex flex-wrap justify-center gap-4 mb-16">
-            <button onclick="showMenu('daily')" class="btn-royal px-8 py-2 border border-[#4A0E0E] transition uppercase text-xs tracking-widest font-semibold">Daily</button>
-            <button onclick="showMenu('festival')" class="btn-royal px-8 py-2 border border-[#4A0E0E] transition uppercase text-xs tracking-widest font-semibold">Festivals</button>
+            <button onclick="showMenu('daily')" class="btn-royal px-8 py-2 border border-[#4A0E0E] transition uppercase text-xs tracking-widest font-semibold">Catering</button>
+            <button onclick="showMenu('festival')" class="btn-royal px-8 py-2 border border-[#4A0E0E] transition uppercase text-xs tracking-widest font-semibold">Daily</button>
             <button onclick="showMenu('weekend')" class="btn-royal px-8 py-2 border border-[#4A0E0E] transition uppercase text-xs tracking-widest font-semibold">Weekends</button>
         </div>
 
-        <!-- Menu Container: Automatically creates columns based on N items -->
+        <!-- Catering Menu -->
         <div id="daily" class="menu-category active-category max-w-6xl mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
                 <!-- Item Start -->
                 <div class="flex justify-between border-b border-[#4A0E0E]/20 pb-4">
                     <div class="pr-4">
-                        <span class="block text-xl font-bold">Butter Chicken Royale</span>
-                        <span class="text-xs text-stone-500 italic">Velvety tomato cream gravy</span>
+                        <span class="block text-xl font-bold">Cheese Nachos with Homemade Salsa</span>
+                        <span class="text-xs text-stone-500 italic">Crispy nachos smothered in cheese with a fresh, tangy spicy Salsa.</span>
                     </div>
-                    <span class="font-bold text-[#E5B34C] whitespace-nowrap">$24</span>
+                    <span class="font-bold text-[#E5B34C] whitespace-nowrap">€5</span>
                 </div>
                 <!-- Item End -->
+                <!-- Item Start -->
                 <div class="flex justify-between border-b border-[#4A0E0E]/20 pb-4">
-                    <div><span class="block text-xl font-bold">Paneer Lababdar</span><span class="text-xs text-stone-500 italic">Authentic cottage cheese</span></div>
-                    <span class="font-bold text-[#E5B34C]">$18</span>
+                    <div class="pr-4">
+                        <span class="block text-xl font-bold">Chat Papdi</span>
+                        <span class="text-xs text-stone-500 italic">Homemade Crunchy Papdi topped with spicy, sweet & tangy chutneys.</span>
+                    </div>
+                    <span class="font-bold text-[#E5B34C] whitespace-nowrap">€5</span>
                 </div>
+                <!-- Item End -->
                 <!-- You can add 50 more of these items here, the layout will stay perfect -->
             </div>
         </div>
 
+        <!-- Daily Menu -->
         <div id="festival" class="menu-category max-w-4xl mx-auto">
+            <!-- Item Start -->
             <div class="bg-[#4A0E0E] text-[#E5B34C] p-8 md:p-12 border-l-8 border-[#E5B34C] shadow-2xl">
-                <h3 class="text-2xl mb-4 italic">Diwali Special Thali</h3>
-                <p class="mb-6 opacity-80 leading-relaxed">A curated celebration thali including signature curries, appetizers, and royal sweets.</p>
-                <span class="font-bold text-2xl">$35 per guest</span>
+                <h3 class="text-2xl mb-4 italic">Besan Laddoos(Gluten-Free)</h3>
+                <p class="mb-6 opacity-80 leading-relaxed">Freshly roasted besan, pure ghee & cardamom, soft and golden.</p>
+                <span class="font-bold text-2xl">€7 for 250 g</span>
             </div>
+            <!-- Item End -->
+            <!-- Item Start -->
+            <div class="bg-[#4A0E0E] text-[#E5B34C] p-8 md:p-12 border-l-8 border-[#E5B34C] shadow-2xl">
+                <h3 class="text-2xl mb-4 italic">Panjeeri Laddoos</h3>
+                <p class="mb-6 opacity-80 leading-relaxed">Made with atta, desi ghee, gond, dry fruits & warm spices.</p>
+                <span class="font-bold text-2xl">€5 for 250 g</span>
+            </div>
+            <!-- Item End -->
         </div>
 
+        <!-- Weekends Menu -->
         <div id="weekend" class="menu-category max-w-4xl mx-auto">
             <div class="grid grid-cols-1 gap-6">
                 <div class="flex justify-between border-b border-[#4A0E0E]/20 pb-4">
@@ -174,19 +190,20 @@
     <!-- 3. FEEDBACK SECTION (Supports N Feedbacks) -->
     <section id="feedback" class="py-24 bg-[#4A0E0E] text-[#E5B34C]">
         <div class="container mx-auto px-6">
-            <h2 class="text-4xl text-center mb-16 uppercase tracking-widest">Guest Praise</h2>
+            <h2 class="text-4xl text-center mb-16 uppercase tracking-widest">Feedbacks</h2>
             
             <!-- Grid for N Feedbacks -->
             <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+                <!-- Item Start -->
                 <div class="p-8 border border-[#E5B34C]/30 italic relative h-full">
                     <span class="text-5xl absolute -top-4 left-4 opacity-50 bg-[#4A0E0E] px-2">“</span>
-                    "The flavors transported me straight back to India. Simply royal."
-                    <p class="mt-6 font-bold not-italic text-sm uppercase tracking-widest">— Sarah J.</p>
+                    "Dear Taran, ......."
                 </div>
+                <!-- Item End -->
                 <div class="p-8 border border-[#E5B34C]/30 italic relative h-full">
                     <span class="text-5xl absolute -top-4 left-4 opacity-50 bg-[#4A0E0E] px-2">“</span>
-                    "The weekend biryani is the best in the city!"
-                    <p class="mt-6 font-bold not-italic text-sm uppercase tracking-widest">— Mark T.</p>
+                    "I tasted teh Namak...."
+                    <!-- <p class="mt-6 font-bold not-italic text-sm uppercase tracking-widest">— Mark T.</p> -->
                 </div>
             </div>
         </div>
